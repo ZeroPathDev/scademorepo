@@ -1,0 +1,17 @@
+{
+  "name": "npm-basic",
+  "version": "1.0.0",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "express": "4.17.1",
+    "minimist": "1.2.5",
+    "node-fetch": "2.6.1"
+  },
+  "devDependencies": {
+    "json5": "2.2.1",
+    "semver": "7.5.2"
+  },
+  "optionalDependencies": {
+    "tar": "6.1.10"
+  }
+}

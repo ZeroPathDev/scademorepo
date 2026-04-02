@@ -1,0 +1,11 @@
+[package]
+name = "crates-basic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = "1.23.0"
+hyper = "0.14.22"
+regex = "1.5.4"
+openssl = "0.10.47"
+serde = "1.0.193"

@@ -1,0 +1,12 @@
+{
+  "name": "npm-scoped",
+  "version": "1.0.0",
+  "dependencies": {
+    "@babel/traverse": "7.23.1",
+    "@angular/core": "16.2.0",
+    "axios": "1.6.0"
+  },
+  "devDependencies": {
+    "@xmldom/xmldom": "0.8.3"
+  }
+}

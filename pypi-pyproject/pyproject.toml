@@ -1,0 +1,19 @@
+[project]
+name = "pypi-pyproject"
+version = "1.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "requests==2.28.0",
+    "django>=4.1,<4.2",
+    "jinja2==3.1.1",
+    "werkzeug==2.2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "setuptools==65.5.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

@@ -1,0 +1,15 @@
+cabal-version: 2.4
+name:          hackage-basic
+version:       0.1.0.0
+synopsis:      A basic Haskell project
+license:       MIT
+build-type:    Simple
+
+executable hackage-basic
+  main-is:       Main.hs
+  build-depends:
+      aeson ==2.1.0.0
+    , process ==1.6.16.0
+    , http-client ==0.7.13.1
+    , text ==2.0.2
+  default-language: Haskell2010
