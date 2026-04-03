@@ -1,4 +1,4 @@
-module github.com/example/go-basic
+module github.com/meridian-ops/deploy-gateway
 
 go 1.21
 

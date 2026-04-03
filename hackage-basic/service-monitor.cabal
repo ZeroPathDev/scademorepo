@@ -1,11 +1,11 @@
 cabal-version: 2.4
-name:          hackage-basic
+name:          service-monitor
 version:       0.1.0.0
-synopsis:      A basic Haskell project
+synopsis:      Health check agent for internal services
 license:       MIT
 build-type:    Simple
 
-executable hackage-basic
+executable service-monitor
   main-is:       Main.hs
   build-depends:
       aeson ==2.1.0.0

@@ -1,8 +1,8 @@
-Package: cranbasic
-Title: CRAN Basic Package
+Package: feedingestion
+Title: Feed Ingestion and XML Processing Toolkit
 Version: 1.0.0
-Authors@R: person("Dev", "User", email = "dev@example.com", role = c("aut", "cre"))
-Description: A basic R package with common dependencies.
+Authors@R: person("Sarah", "Chen", email = "schen@northbeam.io", role = c("aut", "cre"))
+Description: Fetches and parses XML/RSS feeds and remote configuration files for the data pipeline.
 Depends:
     R (>= 4.0.0)
 Imports:

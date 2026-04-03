@@ -1,9 +1,9 @@
-defmodule HexBasic.MixProject do
+defmodule FeedAggregator.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :hex_basic,
+      app: :feed_aggregator,
       version: "0.1.0",
       elixir: "~> 1.14",
       deps: deps()

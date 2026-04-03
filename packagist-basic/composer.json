@@ -1,5 +1,5 @@
 {
-  "name": "example/packagist-basic",
+  "name": "northbeam/product-sync",
   "type": "project",
   "require": {
     "php": ">=8.1",

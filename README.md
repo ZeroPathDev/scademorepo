@@ -1,1 +1,1 @@
-Projects in different languages, frameworks, and libraries.
+Shared internal services and tooling across multiple languages and runtimes.
