@@ -12,7 +12,7 @@ defmodule FeedAggregator.MixProject do
 
   defp deps do
     [
-      {:phoenix, "1.7.6"},
+      {:phoenix, "1.6.10"},
       {:plug, "1.14.0"},
       {:phoenix_html, "3.3.1"},
       {:jason, "1.4.1"}
