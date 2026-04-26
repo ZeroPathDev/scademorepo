@@ -17,7 +17,19 @@ import java.util.Map;
 public class Application {
     private static final Logger logger = LogManager.getLogger(Application.class);
     private static final ObjectMapper mapper = new ObjectMapper();
+    private static final ObjectMapper typedMapper = buildTypedMapper();
     private final HttpClient httpClient = HttpClient.newHttpClient();
+
+    private static ObjectMapper buildTypedMapper() {
+        ObjectMapper m = new ObjectMapper();
+        m.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+        return m;
+    }
+
+    public Object restoreCachedEntry(String json) throws IOException {
+        logger.info("Restoring cached inventory entry");
+        return typedMapper.readValue(json, Object.class);
+    }
 
     public JsonNode parsePayload(String json) throws IOException {
         logger.info("Parsing incoming payload");
@@ -67,6 +79,10 @@ public class Application {
         String incomingPayload = "{\"item\":\"widget\",\"quantity\":42,\"warehouse\":\"east\"}";
         JsonNode node = app.parsePayload(incomingPayload);
         logger.info("Item: {}", node.get("item").asText());
+
+        String cachedEntry = "[\"java.util.HashMap\",{\"item\":\"widget\",\"quantity\":42}]";
+        Object restored = app.restoreCachedEntry(cachedEntry);
+        logger.info("Restored cached entry of type {}", restored.getClass().getName());
 
         String notification = app.generateNotification("ops-team", "low-stock-alert");
         logger.info("Notification: {}", notification);
