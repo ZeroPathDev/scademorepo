@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.northbeam.billing'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.1.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-amqp:2.1.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-integration:2.1.1.RELEASE'
+    implementation 'org.springframework.integration:spring-integration-amqp:5.1.1.RELEASE'
+    implementation 'org.springframework.integration:spring-integration-core:5.1.1.RELEASE'
+    implementation 'org.hibernate:hibernate-validator:6.0.13.Final'
+}
