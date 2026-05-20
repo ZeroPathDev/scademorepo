@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Notification service for transactional email and webhook delivery.'
+
+dependencies {
+    implementation libs.kafkaClients
+    implementation project(':integrations:email-delivery')
+}

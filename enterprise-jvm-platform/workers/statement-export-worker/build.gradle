@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Statement export worker that writes files to object storage.'
+
+dependencies {
+    implementation libs.awsS3
+    implementation libs.commonsCsv
+}

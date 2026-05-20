@@ -1,0 +1,4 @@
+allprojects {
+    group = 'com.northbeam.platform'
+    version = '2026.05.0'
+}

@@ -1,0 +1,5 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Salesforce account synchronization job using shared conventions.'

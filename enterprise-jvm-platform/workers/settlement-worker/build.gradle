@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Nightly settlement reconciliation worker.'
+
+dependencies {
+    implementation libs.commonsCsv
+    implementation project(':integrations:bank-core-adapter')
+}

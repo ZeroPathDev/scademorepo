@@ -1,0 +1,5 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Chargeback ingestion worker with dependencies inherited from conventions.'

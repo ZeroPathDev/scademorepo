@@ -1,0 +1,33 @@
+[versions]
+awsSdk = "2.25.33"
+commonsCsv = "1.10.0"
+guava = "32.1.2-jre"
+jackson = "2.13.5"
+junit = "4.13.2"
+kafka = "3.6.1"
+log4j = "2.17.0"
+micrometer = "1.11.5"
+postgres = "42.6.0"
+resilience4j = "2.1.0"
+springBoot = "2.7.18"
+springSecurity = "5.7.11"
+wiremock = "2.35.0"
+
+[libraries]
+awsS3 = { module = "software.amazon.awssdk:s3", version.ref = "awsSdk" }
+commonsCsv = { module = "org.apache.commons:commons-csv", version.ref = "commonsCsv" }
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+jacksonDatabind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+junit = { module = "junit:junit", version.ref = "junit" }
+kafkaClients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafka" }
+log4jCore = { module = "org.apache.logging.log4j:log4j-core", version.ref = "log4j" }
+micrometerCore = { module = "io.micrometer:micrometer-core", version.ref = "micrometer" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+resilience4jRetry = { module = "io.github.resilience4j:resilience4j-retry", version.ref = "resilience4j" }
+springBootActuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "springBoot" }
+springBootAmqp = { module = "org.springframework.boot:spring-boot-starter-amqp", version.ref = "springBoot" }
+springBootSecurity = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "springBoot" }
+springBootValidation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "springBoot" }
+springBootWeb = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "springBoot" }
+springSecurityJwt = { module = "org.springframework.security:spring-security-oauth2-jose", version.ref = "springSecurity" }
+wiremock = { module = "com.github.tomakehurst:wiremock-jre8", version.ref = "wiremock" }

@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Risk decisioning API for checkout authorization.'
+
+dependencies {
+    implementation libs.springBootSecurity
+    implementation libs.springSecurityJwt
+}

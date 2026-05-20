@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.18'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:2.7.18'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.5'
+    implementation 'io.micrometer:micrometer-core:1.11.5'
+    runtimeOnly 'org.postgresql:postgresql:42.6.0'
+    testImplementation 'junit:junit:4.13.2'
+}

@@ -1,0 +1,9 @@
+plugins {
+    id 'com.northbeam.java-library-conventions'
+}
+
+description = 'Shared audit event models and Kafka serializers.'
+
+dependencies {
+    implementation libs.kafkaClients
+}

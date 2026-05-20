@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-library-conventions'
+}
+
+description = 'Shared metrics, tracing, and structured logging helpers.'
+
+dependencies {
+    implementation libs.log4jCore
+    implementation libs.micrometerCore
+}

@@ -1,0 +1,9 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Identity service with JWT validation and user-session endpoints.'
+
+dependencies {
+    implementation libs.springSecurityJwt
+}

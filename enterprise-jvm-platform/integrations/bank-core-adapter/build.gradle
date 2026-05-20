@@ -1,0 +1,10 @@
+plugins {
+    id 'com.northbeam.java-library-conventions'
+}
+
+description = 'Adapter for bank-core file exchange and reconciliation APIs.'
+
+dependencies {
+    implementation libs.resilience4jRetry
+    testImplementation libs.wiremock
+}

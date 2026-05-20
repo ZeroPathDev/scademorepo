@@ -1,0 +1,11 @@
+plugins {
+    id 'com.northbeam.java-service-conventions'
+}
+
+description = 'Billing API that exposes invoice and payment-method workflows.'
+
+dependencies {
+    implementation libs.springBootAmqp
+    implementation libs.resilience4jRetry
+    implementation project(':libraries:audit-events')
+}
