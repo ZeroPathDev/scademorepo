@@ -4,6 +4,7 @@ plugins {
 
 description = 'JWT claim helpers shared by authenticated services.'
 
+
 dependencies {
     api libs.springSecurityJwt
     implementation libs.springBootSecurity
