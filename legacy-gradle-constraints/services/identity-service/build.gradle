@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'org.springframework.security:spring-security-oauth2-jose'
+    implementation 'org.springframework.security:spring-security-oauth2-resource-server'
+    implementation project(':libraries:security-jwt')
+}

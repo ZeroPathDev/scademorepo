@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+
+if command -v gradle >/dev/null 2>&1; then
+  exec gradle "$@"
+fi
+
+echo "Gradle is required to run this fixture. Expected wrapper distribution is defined in $SCRIPT_DIR/gradle/wrapper/gradle-wrapper.properties." >&2
+exit 1

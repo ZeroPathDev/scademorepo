@@ -1,0 +1,9 @@
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'io.github.resilience4j:resilience4j-retry'
+    implementation 'org.springframework:spring-context'
+    implementation project(':libraries:common-domain')
+    implementation project(':libraries:security-jwt')
+    runtimeOnly 'org.postgresql:postgresql'
+    testImplementation 'junit:junit'
+}

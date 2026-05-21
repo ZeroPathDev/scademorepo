@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'legacy-commerce-platform'
+
+include ':apps:checkout-api'
+include ':apps:merchant-api'
+include ':services:payments-service'
+include ':services:identity-service'
+include ':libraries:security-jwt'
+include ':libraries:common-domain'
+include ':integrations:bank-gateway'
+include ':workers:settlement-worker'

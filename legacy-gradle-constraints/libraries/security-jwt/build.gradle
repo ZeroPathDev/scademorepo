@@ -1,0 +1,6 @@
+dependencies {
+    api 'org.springframework.security:spring-security-oauth2-jose'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'org.springframework.security:spring-security-oauth2-resource-server'
+    testImplementation 'junit:junit'
+}

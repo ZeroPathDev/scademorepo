@@ -1,0 +1,7 @@
+dependencies {
+    implementation 'io.github.resilience4j:resilience4j-retry'
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'org.apache.kafka:kafka-clients'
+    implementation project(':integrations:bank-gateway')
+    implementation project(':libraries:common-domain')
+}

@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'org.apache.kafka:kafka-clients'
+    implementation project(':services:payments-service')
+    runtimeOnly 'org.postgresql:postgresql'
+}
