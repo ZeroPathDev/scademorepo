@@ -1,0 +1,15 @@
+{
+    "version": "0.5",
+    "requires": [
+        "zlib/1.2.11#bfceb3f8904b735f75c2b0df5713b1e6%1743582315.558",
+        "libpng/1.6.50#c96b3b9fa67d44545d6583bb0c348904%1751616189.701"
+    ],
+    "build_requires": [],
+    "python_requires": [],
+    "overrides": {
+        "zlib/[>=1.2.11 <2]": [
+            "zlib/1.2.11"
+        ]
+    },
+    "config_requires": []
+}

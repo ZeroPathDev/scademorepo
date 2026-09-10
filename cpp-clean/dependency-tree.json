@@ -1,0 +1,79 @@
+{
+    "graph": {
+        "nodes": {
+            "0": {
+                "ref": "",
+                "dependencies": {
+                    "1": {
+                        "ref": "libpng/1.6.58",
+                        "require": "libpng/1.6.58",
+                        "run": false,
+                        "libs": true,
+                        "skip": false,
+                        "test": false,
+                        "force": false,
+                        "direct": true,
+                        "build": false,
+                        "transitive_headers": null,
+                        "transitive_libs": null,
+                        "headers": true,
+                        "package_id_mode": "semver_mode",
+                        "visible": true
+                    },
+                    "2": {
+                        "ref": "zlib/1.3.2",
+                        "require": "zlib/1.3.2",
+                        "run": false,
+                        "libs": true,
+                        "skip": false,
+                        "test": false,
+                        "force": true,
+                        "direct": false,
+                        "build": false,
+                        "transitive_headers": null,
+                        "transitive_libs": null,
+                        "headers": false,
+                        "package_id_mode": "semver_mode",
+                        "visible": true
+                    }
+                }
+            },
+            "1": {
+                "ref": "libpng/1.6.58#19cb72905ae54f54948401f753faa2c1",
+                "dependencies": {
+                    "2": {
+                        "ref": "zlib/1.3.2",
+                        "require": "zlib/[>=1.2.11 <2]",
+                        "run": false,
+                        "libs": true,
+                        "skip": false,
+                        "test": false,
+                        "force": false,
+                        "direct": true,
+                        "build": false,
+                        "transitive_headers": null,
+                        "transitive_libs": null,
+                        "headers": true,
+                        "package_id_mode": "minor_mode",
+                        "visible": true
+                    }
+                }
+            },
+            "2": {
+                "ref": "zlib/1.3.2#1cb806da49011867778ffb6ac7190fcb",
+                "dependencies": {}
+            }
+        },
+        "root": {
+            "0": ""
+        },
+        "overrides": {
+            "zlib/[>=1.2.11 <2]": [
+                "zlib/1.3.2"
+            ]
+        },
+        "resolved_ranges": {},
+        "replaced_requires": {},
+        "error": null
+    }
+}

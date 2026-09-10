@@ -1,0 +1,13 @@
+{
+  "name": "sca-npm-clean",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SCA fixture with no known vulnerable direct or transitive dependencies",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "lodash": "4.18.1",
+    "mkdirp": "0.5.6"
+  }
+}

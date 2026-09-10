@@ -1,0 +1,2 @@
+# Direct dependency. requirements.txt locks the complete resolved dependency tree.
+requests==2.34.2

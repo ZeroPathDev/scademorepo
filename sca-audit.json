@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-10T21:49:00+00:00",
+  "advisory_source": "https://api.osv.dev/v1/querybatch",
+  "scope": "All resolved direct and transitive application dependencies in the eight listed fixtures.",
+  "fixtures": {
+    "maven-vulnerable": {
+      "input_sha256": {
+        "pom.xml": "5391b7018944e2767c73a398276bac74c9feb23554db1551bc524870b2257f9d",
+        "dependency-tree.json": "dc4edf44fb37536ac680be50bfffd5eaee842436fe7d585b73af64bcea6eccf3"
+      },
+      "packages": [
+        {
+          "name": "org.apache.commons:commons-text",
+          "version": "1.9",
+          "relationship": "direct",
+          "dependencies": [
+            "org.apache.commons:commons-lang3@3.11"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "Maven",
+              "name": "org.apache.commons:commons-text"
+            },
+            "version": "1.9"
+          },
+          "advisory_ids": [
+            "GHSA-599f-7c49-w659"
+          ]
+        },
+        {
+          "name": "org.apache.commons:commons-lang3",
+          "version": "3.11",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "Maven",
+              "name": "org.apache.commons:commons-lang3"
+            },
+            "version": "3.11"
+          },
+          "advisory_ids": [
+            "GHSA-j288-q9x7-2f5v"
+          ]
+        }
+      ],
+      "vulnerable_package_count": 2,
+      "passed": true
+    },
+    "maven-clean": {
+      "input_sha256": {
+        "pom.xml": "c550bf8bf82c4afd5394b9e16df57f6dba2d57705952841241b31f2154d86503",
+        "dependency-tree.json": "56b77a80148c4ab5fc08d017b035ea3bb01736cecff035f1f80645d553aa01f7"
+      },
+      "packages": [
+        {
+          "name": "org.apache.commons:commons-text",
+          "version": "1.15.0",
+          "relationship": "direct",
+          "dependencies": [
+            "org.apache.commons:commons-lang3@3.20.0"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "Maven",
+              "name": "org.apache.commons:commons-text"
+            },
+            "version": "1.15.0"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "org.apache.commons:commons-lang3",
+          "version": "3.20.0",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "Maven",
+              "name": "org.apache.commons:commons-lang3"
+            },
+            "version": "3.20.0"
+          },
+          "advisory_ids": []
+        }
+      ],
+      "vulnerable_package_count": 0,
+      "passed": true
+    },
+    "npm-vulnerable": {
+      "input_sha256": {
+        "package.json": "ba1898e71b506d6736827f2ad8e8d14a2bc4326d0620f00c7853c2c0fe05aef8",
+        "package-lock.json": "dbcd718839bdd6a9c1a2c9acc807e74b5a3c8f417c686d8da2682dc6699c9907"
+      },
+      "packages": [
+        {
+          "name": "lodash",
+          "version": "4.17.11",
+          "relationship": "direct",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "lodash"
+            },
+            "version": "4.17.11"
+          },
+          "advisory_ids": [
+            "GHSA-29mw-wpgm-hmr9",
+            "GHSA-35jh-r3h4-6jhm",
+            "GHSA-f23m-r3pf-42rh",
+            "GHSA-jf85-cpcp-j695",
+            "GHSA-p6mc-m468-83gw",
+            "GHSA-r5fr-rjxr-66jc",
+            "GHSA-xxjr-mmjv-4gpg"
+          ]
+        },
+        {
+          "name": "minimist",
+          "version": "0.0.8",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "minimist"
+            },
+            "version": "0.0.8"
+          },
+          "advisory_ids": [
+            "GHSA-vh95-rmgr-6w4m",
+            "GHSA-xvch-5gv4-984h"
+          ]
+        },
+        {
+          "name": "mkdirp",
+          "version": "0.5.0",
+          "relationship": "direct",
+          "dependencies": [
+            "minimist@0.0.8"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "mkdirp"
+            },
+            "version": "0.5.0"
+          },
+          "advisory_ids": []
+        }
+      ],
+      "vulnerable_package_count": 2,
+      "passed": true
+    },
+    "npm-clean": {
+      "input_sha256": {
+        "package.json": "04628adf1e8c6f2cc3d521faae135a4827754cb37e6b9ff241d85def2abff352",
+        "package-lock.json": "26f08193f5bd719bb5908f2f43c210fb662517fce5416fa108874c72207e6a71"
+      },
+      "packages": [
+        {
+          "name": "lodash",
+          "version": "4.18.1",
+          "relationship": "direct",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "lodash"
+            },
+            "version": "4.18.1"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "minimist",
+          "version": "1.2.8",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "minimist"
+            },
+            "version": "1.2.8"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "mkdirp",
+          "version": "0.5.6",
+          "relationship": "direct",
+          "dependencies": [
+            "minimist@1.2.8"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "npm",
+              "name": "mkdirp"
+            },
+            "version": "0.5.6"
+          },
+          "advisory_ids": []
+        }
+      ],
+      "vulnerable_package_count": 0,
+      "passed": true
+    },
+    "pypi-vulnerable": {
+      "input_sha256": {
+        "requirements.in": "e4eae7eba07246c5b088adec6ccd08b8284009c57a1e0937c7d1dd5569bfb6d2",
+        "requirements.txt": "9f990124868967c380456f50212400f666e5b07e0daaf2926e3f7efd672096b1",
+        "constraints.txt": "a158144fd4003b89445a23fa06cc77883abf3b5c5a7f813a0d0dec6ad79a05fb"
+      },
+      "packages": [
+        {
+          "name": "certifi",
+          "version": "2026.7.22",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "certifi"
+            },
+            "version": "2026.7.22"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "2.0.12",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "charset-normalizer"
+            },
+            "version": "2.0.12"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "idna",
+          "version": "3.19",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "idna"
+            },
+            "version": "3.19"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "requests",
+          "version": "2.28.0",
+          "relationship": "direct",
+          "dependencies": [
+            "charset-normalizer@2.0.12",
+            "idna@3.19",
+            "urllib3@1.26.12",
+            "certifi@2026.7.22"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "requests"
+            },
+            "version": "2.28.0"
+          },
+          "advisory_ids": [
+            "GHSA-9hjg-9r4m-mvj7",
+            "GHSA-9wx4-h78v-vm56",
+            "GHSA-gc5v-m9x4-r6x2",
+            "GHSA-j8r2-6x86-q33q",
+            "PYSEC-2023-74",
+            "PYSEC-2026-1872",
+            "PYSEC-2026-1873",
+            "PYSEC-2026-2275"
+          ]
+        },
+        {
+          "name": "urllib3",
+          "version": "1.26.12",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "urllib3"
+            },
+            "version": "1.26.12"
+          },
+          "advisory_ids": [
+            "GHSA-2xpw-w6gg-jr37",
+            "GHSA-34jh-p97f-mpxf",
+            "GHSA-38jv-5279-wg99",
+            "GHSA-g4mx-q9vg-27p4",
+            "GHSA-gm62-xv2j-4w53",
+            "GHSA-pq67-6m6q-mj2v",
+            "GHSA-qccp-gfcp-xxvc",
+            "GHSA-v845-jxx5-vc9f",
+            "PYSEC-2023-192",
+            "PYSEC-2023-212",
+            "PYSEC-2026-141",
+            "PYSEC-2026-1994",
+            "PYSEC-2026-1995",
+            "PYSEC-2026-1996",
+            "PYSEC-2026-1998",
+            "PYSEC-2026-1999"
+          ]
+        }
+      ],
+      "vulnerable_package_count": 2,
+      "passed": true
+    },
+    "pypi-clean": {
+      "input_sha256": {
+        "requirements.in": "b56947612bf6f71c68d8d9ceb0e426d328a542ca944dfc4a4a85130e36bb798e",
+        "requirements.txt": "6e4355f5ca135ab71a7019596c8585ae85e1ec8993a96d2438d49b02e9a8c0e0"
+      },
+      "packages": [
+        {
+          "name": "certifi",
+          "version": "2026.7.22",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "certifi"
+            },
+            "version": "2026.7.22"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.5.1",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "charset-normalizer"
+            },
+            "version": "3.5.1"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "idna",
+          "version": "3.19",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "idna"
+            },
+            "version": "3.19"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "requests",
+          "version": "2.34.2",
+          "relationship": "direct",
+          "dependencies": [
+            "charset-normalizer@3.5.1",
+            "idna@3.19",
+            "urllib3@2.7.0",
+            "certifi@2026.7.22"
+          ],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "requests"
+            },
+            "version": "2.34.2"
+          },
+          "advisory_ids": []
+        },
+        {
+          "name": "urllib3",
+          "version": "2.7.0",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "package": {
+              "ecosystem": "PyPI",
+              "name": "urllib3"
+            },
+            "version": "2.7.0"
+          },
+          "advisory_ids": []
+        }
+      ],
+      "vulnerable_package_count": 0,
+      "passed": true
+    },
+    "cpp-vulnerable": {
+      "input_sha256": {
+        "conanfile.py": "5e827680077d973fea4ef166b5b904764ef062646e9c7de09837df7aa0746e99",
+        "conan.lock": "0044a2a9cbe11b89824ac9ece1bec4c81e82a4d22047a66fd8c06e4c569309c9",
+        "dependency-tree.json": "e81b74ed532ecf7b4d9a8c354c2cf2ca743c6c7bd3374884e869acd5dd2e097b"
+      },
+      "packages": [
+        {
+          "name": "libpng",
+          "version": "1.6.50",
+          "relationship": "direct",
+          "dependencies": [
+            "zlib@1.2.11"
+          ],
+          "osv_query": {
+            "commit": "2b978915d82377df13fcbb1fb56660195ded868a"
+          },
+          "advisory_ids": [
+            "CVE-2025-64505",
+            "CVE-2025-64506",
+            "CVE-2025-64720",
+            "CVE-2025-65018",
+            "CVE-2025-66293",
+            "CVE-2026-25646",
+            "CVE-2026-33416",
+            "CVE-2026-33636",
+            "CVE-2026-34757"
+          ],
+          "upstream_release": "https://github.com/pnggroup/libpng/tree/v1.6.50"
+        },
+        {
+          "name": "zlib",
+          "version": "1.2.11",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "commit": "cacf7f1d4e3d44d871b605da3b647f07d718623f"
+          },
+          "advisory_ids": [
+            "CVE-2018-25032",
+            "CVE-2022-37434",
+            "CVE-2023-45853",
+            "CVE-2026-22184",
+            "CVE-2026-3381"
+          ],
+          "upstream_release": "https://github.com/madler/zlib/tree/v1.2.11"
+        }
+      ],
+      "vulnerable_package_count": 2,
+      "passed": true
+    },
+    "cpp-clean": {
+      "input_sha256": {
+        "conanfile.py": "be4757de3899f50cceeb2275c31a91182d5d87b7bdf4fed251901ebacf8b4caf",
+        "conan.lock": "39eafebad32cdfb5d8e081b444c74e0c50444334ce4074349b798621bdc25a6c",
+        "dependency-tree.json": "b04e6e1b6b4b3531401957443bfe9a01c04779af837faf43521fa8f6f6536666"
+      },
+      "packages": [
+        {
+          "name": "libpng",
+          "version": "1.6.58",
+          "relationship": "direct",
+          "dependencies": [
+            "zlib@1.3.2"
+          ],
+          "osv_query": {
+            "commit": "3061454d980de7d53608f594194cfac722721d2a"
+          },
+          "advisory_ids": [],
+          "upstream_release": "https://github.com/pnggroup/libpng/tree/v1.6.58"
+        },
+        {
+          "name": "zlib",
+          "version": "1.3.2",
+          "relationship": "transitive",
+          "dependencies": [],
+          "osv_query": {
+            "commit": "da607da739fa6047df13e66a2af6b8bec7c2a498"
+          },
+          "advisory_ids": [],
+          "upstream_release": "https://github.com/madler/zlib/tree/v1.3.2"
+        }
+      ],
+      "vulnerable_package_count": 0,
+      "passed": true
+    }
+  }
+}
