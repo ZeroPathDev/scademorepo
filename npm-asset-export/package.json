@@ -1,0 +1,13 @@
+{
+  "name": "asset-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prepares directories for inventory asset exports",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "lodash": "4.18.1",
+    "mkdirp": "0.5.6"
+  }
+}

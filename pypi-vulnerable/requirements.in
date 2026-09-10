@@ -1,3 +1,0 @@
-# Direct dependency. constraints.txt preserves the vulnerable transitive version.
--c constraints.txt
-requests==2.28.0

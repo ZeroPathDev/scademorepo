@@ -1,2 +1,0 @@
-# This constrains Requests' dependency without making urllib3 a direct dependency.
-urllib3==1.26.12

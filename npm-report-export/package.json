@@ -1,0 +1,13 @@
+{
+  "name": "report-export",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prepares directories for inventory report exports",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.11",
+    "mkdirp": "0.5.0"
+  }
+}
