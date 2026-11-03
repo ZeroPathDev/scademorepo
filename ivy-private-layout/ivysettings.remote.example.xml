@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivysettings>
+  <properties file="${ivy.settings.dir}/versions.properties"/>
+  <settings defaultResolver="private-and-central"/>
+  <resolvers>
+    <chain name="private-and-central" returnFirst="true">
+      <url name="private-layout">
+        <ivy pattern="https://packages.example.com/ivy/[organisation]/[module]/[revision]/ivy-[revision].xml"/>
+        <artifact pattern="https://packages.example.com/ivy/[organisation]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+      </url>
+      <ibiblio name="central" m2compatible="true" root="https://repo.maven.apache.org/maven2/"/>
+    </chain>
+  </resolvers>
+</ivysettings>

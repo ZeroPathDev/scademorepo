@@ -1,0 +1,12 @@
+{
+  "manifest": "ivy.xml",
+  "packages": [
+    {"name": "commons-beanutils:commons-beanutils", "version": "1.9.2", "direct": true},
+    {"name": "commons-collections:commons-collections", "version": "3.2.1", "direct": false},
+    {"name": "commons-logging:commons-logging", "version": "1.1.1", "direct": false}
+  ],
+  "edges": [
+    ["commons-beanutils:commons-beanutils@1.9.2", "commons-collections:commons-collections@3.2.1"],
+    ["commons-beanutils:commons-beanutils@1.9.2", "commons-logging:commons-logging@1.1.1"]
+  ]
+}

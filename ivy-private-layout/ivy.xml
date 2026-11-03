@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+  <info organisation="com.northbeam" module="template-service" revision="1.0"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies>
+    <dependency org="com.northbeam" name="template-client" rev="${template-client.version}" conf="runtime->default"/>
+  </dependencies>
+</ivy-module>
