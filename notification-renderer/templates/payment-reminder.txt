@@ -1,0 +1,8 @@
+Hello ${customerName},
+
+Invoice ${invoiceId} has an outstanding balance of ${amount}.
+Please arrange payment by ${dueDate}, or contact your account manager if you
+have already sent payment.
+
+Thank you,
+Northbeam Accounts

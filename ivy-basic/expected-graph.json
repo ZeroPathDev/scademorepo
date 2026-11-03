@@ -1,7 +1,0 @@
-{
-  "manifest": "ivy.xml",
-  "packages": [
-    {"name": "commons-collections:commons-collections", "version": "3.2.1", "direct": true}
-  ],
-  "edges": []
-}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ivy-java" xmlns:ivy="antlib:org.apache.ivy.ant">
+  <property name="build.dir" location="build"/>
+  <property name="classes.dir" location="${build.dir}/classes"/>
+  <property name="lib.dir" location="${build.dir}/lib"/>
+
+  <target name="prepare"/>
+
+  <target name="resolve" depends="prepare">
+    <ivy:resolve file="ivy.xml" conf="runtime"/>
+    <ivy:retrieve conf="runtime" pattern="${lib.dir}/[artifact]-[revision].[ext]"/>
+  </target>
+
+  <target name="compile" depends="resolve">
+    <mkdir dir="${classes.dir}"/>
+    <javac srcdir="src/main/java" destdir="${classes.dir}" release="11" encoding="UTF-8" includeantruntime="false">
+      <classpath><fileset dir="${lib.dir}" includes="*.jar"/></classpath>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="${build.dir}/${ant.project.name}.jar" basedir="${classes.dir}"/>
+  </target>
+</project>

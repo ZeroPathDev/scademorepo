@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivysettings>
+  <caches defaultCacheDir="${ivy.settings.dir}/build/ivy-cache"/>
+  <properties file="${ivy.settings.dir}/versions.properties"/>
+  <include file="${ivy.settings.dir}/repositories.xml"/>
+  <settings defaultResolver="private-and-central"/>
+</ivysettings>

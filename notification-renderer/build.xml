@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="notification-renderer" default="jar" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+  <import file="../build-support/ivy-java.xml"/>
+  <property file="versions.properties"/>
+  <property name="client.build.dir" location="client/build"/>
+  <property name="client.repository.dir" location="repository/com.northbeam/template-client/${template-client.version}"/>
+  <ivy:settings file="ivysettings.xml"/>
+
+  <target name="prepare">
+    <ivy:resolve file="${client.repository.dir}/ivy-${template-client.version}.xml" conf="default" resolveId="template-client"/>
+    <ivy:retrieve conf="default" resolveId="template-client" pattern="${client.build.dir}/lib/[artifact]-[revision].[ext]"/>
+    <mkdir dir="${client.build.dir}/classes"/>
+    <javac srcdir="client/src/main/java" destdir="${client.build.dir}/classes" release="11" encoding="UTF-8" includeantruntime="false">
+      <classpath><fileset dir="${client.build.dir}/lib" includes="*.jar"/></classpath>
+    </javac>
+    <jar destfile="${client.repository.dir}/template-client-${template-client.version}.jar" basedir="${client.build.dir}/classes"/>
+  </target>
+</project>
