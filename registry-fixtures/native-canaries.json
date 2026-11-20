@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "canaries": [
+    {
+      "ecosystem": "ivy",
+      "mode": "ivy_resolve",
+      "manifest": "ivy-private-maven/ivy.xml",
+      "probe": {
+        "environment": "ZEROPATH_REGISTRY_MAVEN",
+        "path": "com/zeropath/rehearsal/maven-policy/1.0.0/maven-policy-1.0.0.pom"
+      },
+      "files": [
+        "ivy-private-maven/ivy.xml",
+        "ivy-private-maven/build.xml",
+        "build-support/ivy-java.xml"
+      ],
+      "expected": [
+        [
+          "commons-collections:commons-collections",
+          "3.2.1"
+        ],
+        [
+          "com.zeropath.rehearsal:maven-policy",
+          "1.0.0"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "ivy",
+      "mode": "ivy_resolve",
+      "manifest": "ivy-private-native-mirror/ivy.xml",
+      "probe": {
+        "ivySource": "https://ivy.rehearsal.invalid/native",
+        "path": "com.zeropath.rehearsal/native-policy/1.0.0/ivy.xml"
+      },
+      "files": [
+        "ivy-private-native-mirror/ivy.xml",
+        "ivy-private-native-mirror/ivysettings.xml",
+        "ivy-private-native-mirror/build.xml",
+        "build-support/ivy-java.xml"
+      ],
+      "expected": [
+        [
+          "commons-collections:commons-collections",
+          "3.2.1"
+        ],
+        [
+          "com.zeropath.rehearsal:native-policy",
+          "1.0.0"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "npm",
+      "mode": "npm_package_lock_only",
+      "manifest": "private-npm/package.json",
+      "probe": {
+        "environment": "npm_config_registry",
+        "path": "@zeropath-rehearsal%2fpolicy"
+      },
+      "files": [
+        "private-npm/package.json",
+        "private-npm/index.js"
+      ],
+      "expected": [
+        [
+          "@zeropath-rehearsal/policy",
+          "1.0.0"
+        ],
+        [
+          "lodash",
+          "4.17.15"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "python",
+      "mode": "dependency_tree",
+      "manifest": "private-pypi/requirements.txt",
+      "probe": {
+        "environment": "PIP_INDEX_URL",
+        "path": "zeropath-rehearsal-policy/"
+      },
+      "files": [
+        "private-pypi/requirements.txt",
+        "private-pypi/main.py"
+      ],
+      "expected": [
+        [
+          "zeropath-rehearsal-policy",
+          "1.0.0"
+        ],
+        [
+          "urllib3",
+          "1.25.8"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "mode": "dependency_tree",
+      "manifest": "private-cargo/Cargo.toml",
+      "probe": {
+        "environment": "ZEROPATH_SANDBOX_CARGO_REGISTRY",
+        "path": "ze/ro/zeropath_rehearsal_policy"
+      },
+      "files": [
+        "private-cargo/Cargo.toml",
+        "private-cargo/src/main.rs"
+      ],
+      "expected": [
+        [
+          "zeropath_rehearsal_policy",
+          "1.0.0"
+        ],
+        [
+          "itoa",
+          "1.0.10"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "dotnet",
+      "mode": "dependency_tree",
+      "manifest": "private-nuget/Rehearsal.csproj",
+      "probe": {
+        "environment": "ZEROPATH_REGISTRY_NUGET",
+        "path": "zeropath.rehearsal.policy/index.json"
+      },
+      "files": [
+        "private-nuget/Rehearsal.csproj",
+        "private-nuget/Program.cs"
+      ],
+      "expected": [
+        [
+          "ZeroPath.Rehearsal.Policy",
+          "1.0.0"
+        ],
+        [
+          "Newtonsoft.Json",
+          "12.0.1"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "bundler",
+      "mode": "dependency_tree",
+      "manifest": "private-rubygems/Gemfile",
+      "probe": {
+        "environment": "ZEROPATH_REGISTRY_RUBYGEMS",
+        "path": "api/v1/gems/zeropath-rehearsal-policy.json"
+      },
+      "files": [
+        "private-rubygems/Gemfile",
+        "private-rubygems/main.rb"
+      ],
+      "expected": [
+        [
+          "zeropath-rehearsal-policy",
+          "1.0.0"
+        ],
+        [
+          "rack",
+          "2.0.8"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "composer",
+      "mode": "dependency_tree",
+      "manifest": "private-composer/composer.json",
+      "probe": {
+        "environment": "ZEROPATH_SANDBOX_COMPOSER_REPOSITORY",
+        "path": "p2/zeropath-rehearsal/policy.json"
+      },
+      "files": [
+        "private-composer/composer.json",
+        "private-composer/index.php"
+      ],
+      "expected": [
+        [
+          "zeropath-rehearsal/policy",
+          "1.0.0"
+        ],
+        [
+          "psr/log",
+          "1.1.4"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "go",
+      "mode": "dependency_tree",
+      "manifest": "private-go/go.mod",
+      "files": [
+        "private-go/go.mod",
+        "private-go/main.go"
+      ],
+      "probe": {
+        "environment": "GOPROXY",
+        "path": "example.com/zeropath/rehearsal-policy/@v/v1.0.0.mod"
+      },
+      "expected": [
+        [
+          "example.com/zeropath/rehearsal-policy",
+          "v1.0.0"
+        ],
+        [
+          "github.com/google/uuid",
+          "v1.6.0"
+        ]
+      ]
+    },
+    {
+      "ecosystem": "sbt",
+      "mode": "dependency_tree",
+      "manifest": "private-sbt/build.sbt",
+      "files": [
+        "private-sbt/build.sbt",
+        "private-sbt/project/build.properties",
+        "private-sbt/src/main/scala/Main.scala"
+      ],
+      "probe": {
+        "environment": "ZEROPATH_REGISTRY_MAVEN",
+        "path": "com/zeropath/rehearsal/maven-policy/1.0.0/maven-policy-1.0.0.pom"
+      },
+      "expected": [
+        [
+          "com.zeropath.rehearsal:maven-policy",
+          "1.0.0"
+        ],
+        [
+          "commons-collections:commons-collections",
+          "3.2.1"
+        ]
+      ]
+    }
+  ]
+}

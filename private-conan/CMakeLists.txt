@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(private_policy LANGUAGES CXX)
+find_package(zeropath-rehearsal-policy CONFIG REQUIRED)
+add_executable(private_policy main.cpp)
+target_link_libraries(private_policy zeropath-rehearsal-policy::zeropath-rehearsal-policy)
+target_compile_features(private_policy PRIVATE cxx_std_11)

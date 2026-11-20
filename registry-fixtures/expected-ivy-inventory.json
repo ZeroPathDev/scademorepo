@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "manifests": {
+    "ivy-public-default/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [],
+      "requiresCoverageWarning": false
+    },
+    "ivy-ant-declarations/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "org.apache.commons:commons-text",
+          "version": "1.8"
+        },
+        {
+          "name": "org.apache.commons:commons-lang3",
+          "version": "3.9"
+        }
+      ],
+      "minimumEdges": [
+        {
+          "parent": [
+            "org.apache.commons:commons-text",
+            "1.8"
+          ],
+          "child": [
+            "org.apache.commons:commons-lang3",
+            "3.9"
+          ]
+        }
+      ],
+      "requiresCoverageWarning": false
+    },
+    "ivy-private-maven/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "com.zeropath.rehearsal:maven-policy",
+          "version": "1.0.0"
+        },
+        {
+          "name": "org.apache.commons:commons-lang3",
+          "version": "3.9"
+        },
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [
+        {
+          "parent": [
+            "com.zeropath.rehearsal:maven-policy",
+            "1.0.0"
+          ],
+          "child": [
+            "commons-collections:commons-collections",
+            "3.2.1"
+          ]
+        }
+      ],
+      "requiresCoverageWarning": false
+    },
+    "ivy-private-fallback/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "com.zeropath.rehearsal:maven-policy",
+          "version": "1.0.0"
+        },
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [
+        {
+          "parent": [
+            "com.zeropath.rehearsal:maven-policy",
+            "1.0.0"
+          ],
+          "child": [
+            "commons-collections:commons-collections",
+            "3.2.1"
+          ]
+        }
+      ],
+      "requiresCoverageWarning": false
+    },
+    "ivy-private-native/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "com.zeropath.rehearsal:native-policy",
+          "version": "1.0.0"
+        },
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [
+        {
+          "parent": [
+            "com.zeropath.rehearsal:native-policy",
+            "1.0.0"
+          ],
+          "child": [
+            "commons-collections:commons-collections",
+            "3.2.1"
+          ]
+        }
+      ],
+      "requiresCoverageWarning": false
+    },
+    "ivy-partial-resolution/ivy.xml": {
+      "complete": false,
+      "minimumPackages": [
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [],
+      "requiresCoverageWarning": true
+    },
+    "ivy-private-native-mirror/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "com.zeropath.rehearsal:native-policy",
+          "version": "1.0.0"
+        },
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [
+        {
+          "parent": [
+            "com.zeropath.rehearsal:native-policy",
+            "1.0.0"
+          ],
+          "child": [
+            "commons-collections:commons-collections",
+            "3.2.1"
+          ]
+        }
+      ],
+      "requiresCoverageWarning": false
+    },
+    "ivy paths ünicode/ivy.xml": {
+      "complete": true,
+      "minimumPackages": [
+        {
+          "name": "commons-collections:commons-collections",
+          "version": "3.2.1"
+        }
+      ],
+      "minimumEdges": [],
+      "requiresCoverageWarning": false
+    }
+  }
+}

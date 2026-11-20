@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="com.zeropath.demo" module="ivy-public-default"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies>
+    <dependency org="commons-collections" name="commons-collections" conf="runtime->default" rev="3.2.1"/>
+  </dependencies>
+</ivy-module>

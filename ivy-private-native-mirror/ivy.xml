@@ -1,0 +1,5 @@
+<ivy-module version="2.0">
+  <info organisation="com.zeropath.rehearsal.apps" module="native-mirror"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies><dependency org="com.zeropath.rehearsal" name="native-policy" rev="1.0.0" conf="runtime->default"/></dependencies>
+</ivy-module>

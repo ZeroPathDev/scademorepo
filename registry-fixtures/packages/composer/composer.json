@@ -1,0 +1,7 @@
+{
+  "name": "zeropath-rehearsal/policy",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": { "psr/log": "1.1.4" },
+  "autoload": { "psr-4": { "ZeroPathRehearsal\\": "src/" } }
+}

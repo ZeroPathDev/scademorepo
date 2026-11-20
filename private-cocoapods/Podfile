@@ -1,0 +1,7 @@
+source 'https://cdn.cocoapods.org/'
+platform :ios, '12.0'
+install! 'cocoapods', :integrate_targets => false
+
+target 'PolicyApp' do
+  pod 'RehearsalPolicy', :path => '../registry-fixtures/packages/cocoapods'
+end

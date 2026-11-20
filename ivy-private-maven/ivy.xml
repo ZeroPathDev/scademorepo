@@ -1,0 +1,8 @@
+<ivy-module version="2.0">
+  <info organisation="com.zeropath.demo" module="ivy-private-maven"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies>
+    <dependency org="com.zeropath.rehearsal" name="maven-policy" conf="runtime->default" rev="1.0.0"/>
+    <dependency org="org.apache.commons" name="commons-lang3" conf="runtime->default" rev="3.9"/>
+  </dependencies>
+</ivy-module>
