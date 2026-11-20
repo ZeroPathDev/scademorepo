@@ -1,0 +1,7 @@
+[package]
+name = "private-registry-rehearsal"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+zeropath_rehearsal_policy = "=1.0.0"

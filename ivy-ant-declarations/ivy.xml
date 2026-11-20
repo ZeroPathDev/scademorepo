@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="com.zeropath.demo" module="ivy-ant-declarations"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies>
+    <dependency org="org.apache.commons" name="commons-text" conf="runtime->default" rev="${commons.text.version}"/>
+  </dependencies>
+</ivy-module>

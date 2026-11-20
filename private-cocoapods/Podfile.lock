@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - RehearsalPolicy (1.0.0):
+    - AFNetworking (= 4.0.1)
+
+DEPENDENCIES:
+  - RehearsalPolicy (from `../registry-fixtures/packages/cocoapods`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  RehearsalPolicy:
+    :path: "../registry-fixtures/packages/cocoapods"
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  RehearsalPolicy: 89729cbfbf7c9c11c570d9bd09dabc96ffb43760
+
+PODFILE CHECKSUM: 493973b66999c07ef46ee729419cc606631f40cb
+
+COCOAPODS: 1.16.2

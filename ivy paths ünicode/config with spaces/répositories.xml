@@ -1,0 +1,3 @@
+<ivysettings>
+  <include url="file:${ivy.settings.dir}/public%20sources.xml"/>
+</ivysettings>

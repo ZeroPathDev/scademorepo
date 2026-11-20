@@ -1,0 +1,2 @@
+require 'zeropath_rehearsal_policy'
+puts ZeroPathRehearsalPolicy.version

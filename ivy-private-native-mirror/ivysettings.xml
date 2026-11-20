@@ -1,0 +1,9 @@
+<ivysettings>
+  <settings defaultResolver="sources"/>
+  <resolvers>
+    <chain name="sources" returnFirst="true">
+      <url name="native"><ivy pattern="https://ivy.rehearsal.invalid/native/[organisation]/[module]/[revision]/ivy.xml"/><artifact pattern="https://ivy.rehearsal.invalid/native/[organisation]/[module]/[revision]/[artifact].[ext]"/></url>
+      <ibiblio name="central" m2compatible="true"/>
+    </chain>
+  </resolvers>
+</ivysettings>

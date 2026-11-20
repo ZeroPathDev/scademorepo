@@ -1,0 +1,9 @@
+[package]
+name = "zeropath_rehearsal_policy"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "Private registry rehearsal fixture"
+
+[dependencies]
+itoa = "=1.0.10"

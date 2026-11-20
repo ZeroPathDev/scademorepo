@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="com.zeropath.demo" module="ivy-private-native"/>
+  <configurations><conf name="runtime"/></configurations>
+  <dependencies>
+    <dependency org="com.zeropath.rehearsal" name="native-policy" conf="runtime->default" rev="1.0.0"/>
+  </dependencies>
+</ivy-module>

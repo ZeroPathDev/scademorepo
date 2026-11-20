@@ -1,0 +1,3 @@
+<project name="ivy-private-fallback" default="jar" basedir=".">
+  <import file="../build-support/ivy-java.xml"/>
+</project>

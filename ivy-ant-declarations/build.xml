@@ -1,0 +1,7 @@
+<project name="ivy-ant-declarations" xmlns:ivy="antlib:org.apache.ivy.ant" default="jar">
+  <property file="build.properties"/>
+  <ivy:settings file="config/repositories.xml"/>
+  <target name="describe"><echo message="Top-level declarations supply Ivy settings and versions."/></target>
+  <target name="must-not-run"><fail message="Dependency scanning must not execute Ant targets."/></target>
+  <import file="../build-support/ivy-java.xml"/>
+</project>

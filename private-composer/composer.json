@@ -1,0 +1,4 @@
+{
+  "name": "zeropath-rehearsal/app",
+  "require": { "zeropath-rehearsal/policy": "1.0.0" }
+}
